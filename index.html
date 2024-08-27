@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarius LTD.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2C2C54;">
+            <div class="container">
+                <img src="images/Logo.png" alt="" style="width: 120px; height: 120px; border-radius: 10px;">
+                <a class="navbar-brand" href="index.html">Samuel Niwenyesiga</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#writing">Writing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item">
+                            <div class="nav-link">
+                                <i class="fa-solid fa-bell" id="notificationBell"></i>
+                                <span id="notificationCount" class="badge bg-danger">1738</span>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <img src="sa.jpg" alt="User" id="userProfile" class="rounded-circle" width="40" height="40">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero" class="text-center text-white d-flex align-items-center" style="height: 100vh; background: url('path-to-your-image.jpg') no-repeat center center/cover; background-color: #2C2C54;">
+        <div class="circle"></div>
+        <div class="hero-text">
+            <h1 class="display-4">Samuel Niwenyesiga</h1>
+            <p class="lead typing-effect" id="typingEffect"></p>
+        </div>
+    </section>
+
+    <section id="about" class="py-5" style="background-color: #3B3B98;">
+        <div class="container">
+            <h2 class="text-center text-white">About Me</h2>
+            <p class="text-center text-white">I am a passionate web developer, designer and writer with a knack for creating impactful solutions and captivating stories...</p>
+        </div>
+    </section>
+
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Skills</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <i class="fab fa-html5 fa-3x" style="color: #E34F26;"></i>
+                    <h5 class="mt-2">HTML</h5>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%;">90%</div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <i class="fab fa-css3-alt fa-3x" style="color: #1572B6;"></i>
+                    <h5 class="mt-2">CSS</h5>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 85%;">85%</div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <i class="fab fa-js-square fa-3x" style="color: #F7DF1E;"></i>
+                    <h5 class="mt-2">JavaScript</h5>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;">80%</div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <i class="fab fa-react fa-3x" style="color: #61DAFB;"></i>
+                    <h5 class="mt-2">React</h5>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 75%;">75%</div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <i class="fab fa-php fa-3x" style="color: #777BB4;"></i>
+                    <h5 class="mt-2">PHP</h5>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 70%;">70%</div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <i class="fab fa-python fa-3x" style="color: #306998;"></i>
+                    <h5 class="mt-2">Python</h5>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 65%;">65%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-5" style="background-color: #3B3B98;">
+        <div class="container">
+            <h2 class="text-center text-white">Portfolio</h2>
+            <div class="row">
+                <div class="col-md-4 dropdown-card">
+                    <div class="card project-card">
+                        <img src="images/queen.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <button class="btn btn-primary" onclick="toggleDropdown('dropdown1')">Read More</button>
+                            <div id="dropdown1" class="dropdown-content">
+                                <p>Detailed information about Project 1...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 dropdown-card">
+                    <div class="card project-card">
+                        <img src="images/dash.png" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <button class="btn btn-primary" onclick="toggleDropdown('dropdown2')">Read More</button>
+                            <div id="dropdown2" class="dropdown-content">
+                                <p>Detailed information about Project 2...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 dropdown-card">
+                    <div class="card project-card">
+                        <img src="images/music.png" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <button class="btn btn-primary" onclick="toggleDropdown('dropdown3')">Read More</button>
+                            <div id="dropdown3" class="dropdown-content">
+                                <p>Detailed information about Project 3...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="writing" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Writing</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card writing-card">
+                        <img src="images/cake.png" class="card-img-top" alt="Writing 1">
+                        <div class="card-body">
+                            <h5 class="card-title">A Design For Bakers</h5>
+                            <button class="btn btn-primary" onclick="toggleDropdown('dropdown3')">Read More</button>
+                            <div id="dropdown3" class="dropdown-content">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card writing-card">
+                        <img src="images/Blue White Simple Aesthetic Book Cafe Logo.png" class="card-img-top" alt="Writing 2">
+                        <div class="card-body">
+                            <h5 class="card-title">A design for AEISS institution</h5>
+                            <button class="btn btn-primary" onclick="toggleDropdown('dropdown3')">Read More</button>
+                            <div id="dropdown3" class="dropdown-content">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card writing-card">
+                        <img src="images/Black and White Vintage Halloween Party  A3 Poster.png" class="card-img-top" alt="Writing 3">
+                        <div class="card-body">
+                            <h5 class="card-title">A design for a Saloon </h5>
+                            <button class="btn btn-primary" onclick="toggleDropdown('dropdown3')">Read More</button>
+                            <div id="dropdown3" class="dropdown-content">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center text-white py-3" style="background-color: #2C2C54;">
+        <div class="container">
+            <p>&copy; Samuel Arius_SARIUS</p>
+            <a href="mailto:samuelarius437@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://instagram.com/samuel.x1738"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/0702613212"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://t.me/Samuel Arius"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="java/script.js"></script>
+</body>
+</html>
